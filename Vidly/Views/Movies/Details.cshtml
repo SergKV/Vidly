@@ -1,0 +1,15 @@
+﻿@model Vidly.ViewModels.MovieViewModel
+@{
+    ViewBag.Title = "SingleMovie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SingleMovie</h2>
+<p>@Model</p>
+<p>@Model.Name</p>
+<p>@Model.Id</p>
+
+@if (@Model.Id == 1)
+{
+    <p>@Model.Movies[0]</p>
+}
